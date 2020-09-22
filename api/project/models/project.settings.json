@@ -11,6 +11,17 @@
   "attributes": {
     "project_name": {
       "type": "string"
+    },
+    "project_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contents",
+  "info": {
+    "name": "Content"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "name": {
+      "type": "string"
+    },
+    "page": {
+      "model": "page",
+      "via": "contents"
+    }
+  }
+}
